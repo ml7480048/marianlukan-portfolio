@@ -502,7 +502,7 @@
       </div>
       <div class="contact-item">
         <div class="fact-label">CV</div>
-        <a href="CV_Marian_Lukan.pdf" target="_blank" rel="noopener">Download PDF</a>
+        <a href="cv.html" target="_blank" rel="noopener">Download PDF</a>
       </div>
     </div>
   </div>
@@ -530,5 +530,42 @@
 </script>
 
 <script defer src="/_vercel/insights/script.js"></script>
+<script src="https://player.vimeo.com/api/player.js" defer></script>
+<script>
+(function(){
+  var tracked = {};
+  function track(name, data){
+    var key = name + ':' + (data && data.src || '');
+    if (tracked[key]) return;
+    tracked[key] = true;
+    if (window.va) { window.va('event', {name: name, data: data}); }
+  }
+
+  // Mux players: best-effort postMessage listener (Mux's iframe embed relays player events)
+  window.addEventListener('message', function(e){
+    var origin = e.origin || '';
+    if (origin.indexOf('mux.com') === -1) return;
+    var msg = e.data;
+    if (typeof msg === 'string') { try { msg = JSON.parse(msg); } catch(err){ return; } }
+    if (!msg) return;
+    var evt = msg.event || msg.type;
+    if (evt === 'play' || evt === 'playing') {
+      track('video_play', {src: 'mux'});
+    }
+  });
+
+  // Vimeo player: official SDK, fires reliably
+  function initVimeo(){
+    if (!window.Vimeo) { setTimeout(initVimeo, 300); return; }
+    document.querySelectorAll('.work-video iframe[src*="vimeo.com"]').forEach(function(iframe){
+      try {
+        var player = new Vimeo.Player(iframe);
+        player.on('play', function(){ track('video_play', {src: 'vimeo'}); });
+      } catch(err){}
+    });
+  }
+  initVimeo();
+})();
+</script>
 </body>
 </html>
