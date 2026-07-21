@@ -151,11 +151,10 @@
   /* WORK GRID */
   .work-grid{display:flex;flex-direction:column;gap:8px;}
   .work-item{
-    display:grid;grid-template-columns:64px 1.1fr 0.9fr;gap:32px;align-items:center;
+    display:grid;grid-template-columns:1.1fr 0.9fr;gap:32px;align-items:center;
     padding:40px 0;border-top:1px solid var(--line-soft);
   }
   .work-item:first-child{border-top:1px solid var(--line);}
-  .work-index{font-family:var(--serif);font-size:15px;color:var(--fg-dimmer);padding-top:4px;}
   .work-item:nth-child(even) .work-video{order:3;}
   .work-item:nth-child(even) .work-info{order:2;}
   .work-video{
@@ -174,7 +173,6 @@
       grid-template-columns:1fr;display:flex;flex-direction:column;gap:20px;
     }
     .work-item .work-video,.work-item .work-info{order:initial;}
-    .work-index{padding-top:0;}
   }
 
   /* CLIENTS */
@@ -309,7 +307,6 @@
     <div class="work-grid">
 
       <div class="work-item reveal">
-        <div class="work-index">01</div>
         <div class="work-video">
           <iframe src="https://player.mux.com/k1AJqGoQWpnnZ2V9f7DpNWNJu8uR3l8ZRgJyru81NOQ" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
@@ -321,7 +318,6 @@
       </div>
 
       <div class="work-item reveal">
-        <div class="work-index">02</div>
         <div class="work-video">
           <iframe src="https://player.mux.com/6u01DL102PlCBa2Q1XRJVNSiy5EalAFyDQY02T3IYZUSoA" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
@@ -333,7 +329,6 @@
       </div>
 
       <div class="work-item reveal">
-        <div class="work-index">03</div>
         <div class="work-video">
           <iframe src="https://player.mux.com/1PFDBpw4gl4MiMhvksRnbScwiLF2sbvMvujB1lGki00c" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
@@ -345,7 +340,6 @@
       </div>
 
       <div class="work-item reveal">
-        <div class="work-index">04</div>
         <div class="work-video">
           <iframe src="https://player.mux.com/UyHeIbfVpnhSvrEz3S99fxXxAvysOR9lveCeYgG7g5E" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
@@ -357,7 +351,6 @@
       </div>
 
       <div class="work-item reveal">
-        <div class="work-index">05</div>
         <div class="work-video">
           <iframe src="https://player.vimeo.com/video/1184769369" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
@@ -365,6 +358,28 @@
           <div class="work-role">Producer</div>
           <div class="work-title">Wörthersee — "Roboter"</div>
           <p>A robot arrives at Wörthersee — playful sci-fi storytelling built around a striking practical effect.</p>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="work-video">
+          <iframe src="https://player.vimeo.com/video/818875977" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="work-info">
+          <div class="work-role">Producer</div>
+          <div class="work-title">Post — "Zusammenbringen"</div>
+          <p>Four stories of self-doubt turning into self-acceptance — an image campaign for Österreichische Post built around music as catharsis.</p>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="work-video">
+          <iframe src="https://player.vimeo.com/video/1120310630" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="work-info">
+          <div class="work-role">Producer</div>
+          <div class="work-title">Erste Bank — Employer Branding</div>
+          <p>A playful, character-driven employer branding piece casting Erste's people as everyday "code commanders."</p>
         </div>
       </div>
 
