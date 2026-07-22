@@ -70,6 +70,11 @@
   }
   .navlinks a:hover{color:var(--fg);}
   .navlinks a:hover::after{width:100%;}
+  @media (max-width:480px){
+    nav .wrap{flex-wrap:wrap;height:auto;padding:14px 0;row-gap:10px;}
+    .logo{font-size:16px;white-space:nowrap;}
+    .navlinks{width:100%;justify-content:space-between;gap:0;font-size:10px;letter-spacing:0.05em;}
+  }
 
   /* HEADER */
   header.hero{
@@ -298,7 +303,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <div class="section-num">01 — Selected Work</div>
+        <div class="section-num">Selected Work</div>
         <h2>Recent productions</h2>
       </div>
       <p class="section-desc">A selection of commercial work produced over the past years.</p>
@@ -395,7 +400,7 @@
         <div class="stat-label">Productions<br>2022–2026</div>
       </div>
       <div class="clients-intro">
-        <div class="section-num">02 — Clients</div>
+        <div class="section-num">Clients</div>
         <h2>Trusted by leading brands &amp; agencies</h2>
         <p class="section-desc">Four years of full-cycle production in Vienna — working directly with brands and alongside the city's leading advertising agencies.</p>
       </div>
@@ -455,7 +460,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <div class="section-num">03 — About</div>
+        <div class="section-num">About</div>
         <h2>Marian Lukan</h2>
       </div>
     </div>
@@ -474,7 +479,7 @@
           </div>
           <div>
             <div class="fact-label">Experience</div>
-            <div class="fact-val">15+ years</div>
+            <div class="fact-val">17+ years</div>
           </div>
           <div>
             <div class="fact-label">Status</div>
@@ -494,7 +499,7 @@
   <div class="wrap">
     <div class="contact-wrap reveal">
       <div>
-        <div class="section-num">04 — Contact</div>
+        <div class="section-num">Contact</div>
         <h2>Let's work together</h2>
       </div>
     </div>
