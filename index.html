@@ -197,6 +197,7 @@
   .marquee-track{
     display:flex;align-items:center;gap:20px;width:max-content;
     animation:marquee 42s linear infinite;
+    will-change:transform;backface-visibility:hidden;
   }
   .clients-marquee:hover .marquee-track{animation-play-state:paused;}
   .logo-chip{
@@ -407,50 +408,50 @@
     </div>
     <div class="clients-marquee reveal">
       <div class="marquee-track">
-        <div class="logo-chip"><img src="asics.png" alt="ASICS" loading="lazy"></div>
-        <div class="logo-chip"><img src="volksbank.png" alt="Volksbank" loading="lazy"></div>
-        <div class="logo-chip"><img src="erste.png" alt="Erste Bank" loading="lazy"></div>
-        <div class="logo-chip"><img src="spar.png" alt="SPAR" loading="lazy"></div>
-        <div class="logo-chip"><img src="interspar.png" alt="Interspar" loading="lazy"></div>
-        <div class="logo-chip"><img src="billa.png" alt="BILLA" loading="lazy"></div>
-        <div class="logo-chip"><img src="penny.png" alt="PENNY" loading="lazy"></div>
-        <div class="logo-chip"><img src="rewe.png" alt="REWE" loading="lazy"></div>
-        <div class="logo-chip"><img src="ikea.png" alt="IKEA" loading="lazy"></div>
-        <div class="logo-chip"><img src="audi.png" alt="AUDI" loading="lazy"></div>
-        <div class="logo-chip"><img src="siemens.png" alt="Siemens" loading="lazy"></div>
-        <div class="logo-chip"><img src="takeda.png" alt="Takeda" loading="lazy"></div>
-        <div class="logo-chip"><img src="evn.png" alt="EVN" loading="lazy"></div>
-        <div class="logo-chip"><img src="puls4.png" alt="Puls4" loading="lazy"></div>
-        <div class="logo-chip"><img src="post.png" alt="Österreichische Post" loading="lazy"></div>
-        <div class="logo-chip"><img src="zurich.png" alt="Zurich" loading="lazy"></div>
-        <div class="logo-chip"><img src="magenta.png" alt="Magenta" loading="lazy"></div>
-        <div class="logo-chip"><img src="gardena.png" alt="Gardena" loading="lazy"></div>
-        <div class="logo-chip"><img src="einhell.png" alt="Einhell" loading="lazy"></div>
-        <div class="logo-chip"><img src="stargames.png" alt="Stargames" loading="lazy"></div>
-        <div class="logo-chip"><img src="kellys.png" alt="Kelly's" loading="lazy"></div>
-        <div class="logo-chip"><img src="solarwatt.png" alt="Solarwatt" loading="lazy"></div>
-        <div class="logo-chip"><img src="asics.png" alt="ASICS" loading="lazy"></div>
-        <div class="logo-chip"><img src="volksbank.png" alt="Volksbank" loading="lazy"></div>
-        <div class="logo-chip"><img src="erste.png" alt="Erste Bank" loading="lazy"></div>
-        <div class="logo-chip"><img src="spar.png" alt="SPAR" loading="lazy"></div>
-        <div class="logo-chip"><img src="interspar.png" alt="Interspar" loading="lazy"></div>
-        <div class="logo-chip"><img src="billa.png" alt="BILLA" loading="lazy"></div>
-        <div class="logo-chip"><img src="penny.png" alt="PENNY" loading="lazy"></div>
-        <div class="logo-chip"><img src="rewe.png" alt="REWE" loading="lazy"></div>
-        <div class="logo-chip"><img src="ikea.png" alt="IKEA" loading="lazy"></div>
-        <div class="logo-chip"><img src="audi.png" alt="AUDI" loading="lazy"></div>
-        <div class="logo-chip"><img src="siemens.png" alt="Siemens" loading="lazy"></div>
-        <div class="logo-chip"><img src="takeda.png" alt="Takeda" loading="lazy"></div>
-        <div class="logo-chip"><img src="evn.png" alt="EVN" loading="lazy"></div>
-        <div class="logo-chip"><img src="puls4.png" alt="Puls4" loading="lazy"></div>
-        <div class="logo-chip"><img src="post.png" alt="Österreichische Post" loading="lazy"></div>
-        <div class="logo-chip"><img src="zurich.png" alt="Zurich" loading="lazy"></div>
-        <div class="logo-chip"><img src="magenta.png" alt="Magenta" loading="lazy"></div>
-        <div class="logo-chip"><img src="gardena.png" alt="Gardena" loading="lazy"></div>
-        <div class="logo-chip"><img src="einhell.png" alt="Einhell" loading="lazy"></div>
-        <div class="logo-chip"><img src="stargames.png" alt="Stargames" loading="lazy"></div>
-        <div class="logo-chip"><img src="kellys.png" alt="Kelly's" loading="lazy"></div>
-        <div class="logo-chip"><img src="solarwatt.png" alt="Solarwatt" loading="lazy"></div>
+        <div class="logo-chip"><img src="asics.png" alt="ASICS"></div>
+        <div class="logo-chip"><img src="volksbank.png" alt="Volksbank"></div>
+        <div class="logo-chip"><img src="erste.png" alt="Erste Bank"></div>
+        <div class="logo-chip"><img src="spar.png" alt="SPAR"></div>
+        <div class="logo-chip"><img src="interspar.png" alt="Interspar"></div>
+        <div class="logo-chip"><img src="billa.png" alt="BILLA"></div>
+        <div class="logo-chip"><img src="penny.png" alt="PENNY"></div>
+        <div class="logo-chip"><img src="rewe.png" alt="REWE"></div>
+        <div class="logo-chip"><img src="ikea.png" alt="IKEA"></div>
+        <div class="logo-chip"><img src="audi.png" alt="AUDI"></div>
+        <div class="logo-chip"><img src="siemens.png" alt="Siemens"></div>
+        <div class="logo-chip"><img src="takeda.png" alt="Takeda"></div>
+        <div class="logo-chip"><img src="evn.png" alt="EVN"></div>
+        <div class="logo-chip"><img src="puls4.png" alt="Puls4"></div>
+        <div class="logo-chip"><img src="post.png" alt="Österreichische Post"></div>
+        <div class="logo-chip"><img src="zurich.png" alt="Zurich"></div>
+        <div class="logo-chip"><img src="magenta.png" alt="Magenta"></div>
+        <div class="logo-chip"><img src="gardena.png" alt="Gardena"></div>
+        <div class="logo-chip"><img src="einhell.png" alt="Einhell"></div>
+        <div class="logo-chip"><img src="stargames.png" alt="Stargames"></div>
+        <div class="logo-chip"><img src="kellys.png" alt="Kelly's"></div>
+        <div class="logo-chip"><img src="solarwatt.png" alt="Solarwatt"></div>
+        <div class="logo-chip"><img src="asics.png" alt="ASICS"></div>
+        <div class="logo-chip"><img src="volksbank.png" alt="Volksbank"></div>
+        <div class="logo-chip"><img src="erste.png" alt="Erste Bank"></div>
+        <div class="logo-chip"><img src="spar.png" alt="SPAR"></div>
+        <div class="logo-chip"><img src="interspar.png" alt="Interspar"></div>
+        <div class="logo-chip"><img src="billa.png" alt="BILLA"></div>
+        <div class="logo-chip"><img src="penny.png" alt="PENNY"></div>
+        <div class="logo-chip"><img src="rewe.png" alt="REWE"></div>
+        <div class="logo-chip"><img src="ikea.png" alt="IKEA"></div>
+        <div class="logo-chip"><img src="audi.png" alt="AUDI"></div>
+        <div class="logo-chip"><img src="siemens.png" alt="Siemens"></div>
+        <div class="logo-chip"><img src="takeda.png" alt="Takeda"></div>
+        <div class="logo-chip"><img src="evn.png" alt="EVN"></div>
+        <div class="logo-chip"><img src="puls4.png" alt="Puls4"></div>
+        <div class="logo-chip"><img src="post.png" alt="Österreichische Post"></div>
+        <div class="logo-chip"><img src="zurich.png" alt="Zurich"></div>
+        <div class="logo-chip"><img src="magenta.png" alt="Magenta"></div>
+        <div class="logo-chip"><img src="gardena.png" alt="Gardena"></div>
+        <div class="logo-chip"><img src="einhell.png" alt="Einhell"></div>
+        <div class="logo-chip"><img src="stargames.png" alt="Stargames"></div>
+        <div class="logo-chip"><img src="kellys.png" alt="Kelly's"></div>
+        <div class="logo-chip"><img src="solarwatt.png" alt="Solarwatt"></div>
       </div>
     </div>
   </div>
